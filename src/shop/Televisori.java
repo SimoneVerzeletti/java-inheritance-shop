@@ -6,6 +6,11 @@ public class Televisori extends Prodotto {
 
     private boolean smart;
 
+    public Televisori(String nome, String descrizione, int polliciTV, boolean smart, double prezzo, double iva){
+        this.polliciTV = polliciTV;
+        this.smart = smart;
+        super(nome, descrizione, prezzo, iva);
+    }
     public int getPolliciTV(){
         return polliciTV;
     }

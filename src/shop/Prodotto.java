@@ -1,4 +1,5 @@
 package shop;
+import java.util.Random;
 
 public class Prodotto {
     
@@ -14,7 +15,7 @@ public class Prodotto {
     private double iva;  
 
     //costruttore
-    public Prodotto(){
+    public Prodotto(String nome, String descrizione, double prezzo, double iva){
         Random ran = new Random();
         this.codice = ran.nextInt(1000, 9999);
         this.nome = nome;
@@ -22,7 +23,7 @@ public class Prodotto {
         this.prezzo = prezzo;
         this.iva = iva;
     }
-   
+
     //metodi
     public String getNome(){
         return nome;

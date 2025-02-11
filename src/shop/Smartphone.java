@@ -2,15 +2,20 @@ package shop;
 
 public class Smartphone extends Prodotto {
 
-    private int imei;
+    private String imei;
 
     private int ram;
 
-    public int getImei() {
+    public Smartphone (String imei, String nome, String descrizione, double prezzo, double iva){
+        this.imei = imei;
+        super(nome, descrizione, prezzo, iva);
+       } 
+
+    public String getImei() {
         return imei;
     }
 
-    public void setImei(int imei) {
+    public void setImei(String imei) {
         this.imei = imei;
     }
 
@@ -21,4 +26,5 @@ public class Smartphone extends Prodotto {
     public void setRam(int ram) {
         this.ram = ram;
     }
+
 }

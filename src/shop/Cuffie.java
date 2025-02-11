@@ -6,6 +6,14 @@ public class Cuffie extends Prodotto {
 
     private boolean wireles;
 
+    public Cuffie(String nome, String descrizione, double prezzo, double iva, String color, boolean wireles){
+        this.color = color;
+        this.wireles = wireles;
+        super(nome, descrizione, prezzo, iva);
+
+    }
+
+
     public String getColor(){
         return color;
     }
